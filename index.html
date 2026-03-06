@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawei Fan | Institute of Software, Chinese Academy of Sciences</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        /* Styling for the author names to highlight the owner */
+        .author-highlight {
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .nav-link {
+            transition: color 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #2563eb;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 40px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800 tracking-tight">Dawei Fan</a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#internships" class="nav-link">Internships</a>
+                <a href="#XCPC-NOIP" class="nav-link">Awards</a>
+            </div>
+            <!-- Mobile Menu Button (Optional functionality can be added via JS) -->
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-6 py-12">
+
+        <!-- Hero / Profile Section -->
+        <section id="about" class="flex flex-col-reverse md:flex-row items-center gap-10 mb-20 pt-8">
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Dawei Fan</h1>
+                <p class="text-xl text-blue-600 font-medium mb-6">Master Student of ISCAS, UCAS</p>
+                
+                <p class="text-gray-700 leading-relaxed mb-6 text-left">
+                    I am Dawei Fan, a second-year master student of Institute of Software, Chinese Academy of Sciences. My research interests primarily lie in  <strong>Image restoration</strong>, <strong>Image fusion</strong> and <strong>Computational photography</strong>.
+                </p>
+
+                <!-- Social & Contact Links -->
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
+                    <button onclick="copyEmail(this)" class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition shadow-sm">
+                        <i class="fas fa-envelope"></i> <span class="email-text">nikoncopd850 [at] gmail.com</span>
+                    </button>
+                    <a href="https://github.com/NikonD850" target="_blank" class="flex items-center gap-2 bg-gray-100 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition shadow-sm border border-gray-200">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=6Ckluw8AAAAJ&hl=en&authuser=1" target="_blank" class="flex items-center gap-2 bg-gray-100 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-200 transition shadow-sm border border-gray-200">
+                        <i class="fas fa-graduation-cap"></i> Google Scholar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Image -->
+            <div class="w-48 h-48 md:w-64 md:h-64 shrink-0">
+                <!-- Replace src with your actual photo URL -->
+                <img src="https://avatars.githubusercontent.com/u/42772300?v=4" alt="Dawei Fan" class="w-full h-full object-cover rounded-2xl shadow-xl border-4 border-white">
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="mb-20 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Recent News</h2>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="font-medium text-blue-600 whitespace-nowrap">Mar 2026</span>
+                        <span class="text-gray-700"><strong>We are the champion of CVPR'26 PBVS HISR challenge!</strong></span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="font-medium text-blue-600 whitespace-nowrap">Mar 2026</span>
+                        <span class="text-gray-700"><strong>We are the champion of CVPR'26 PBVS TISR challenge!</strong></span>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="font-medium text-blue-600 whitespace-nowrap">Jan 2026</span>
+                        <span class="text-gray-700"><strong>A first-author paper accepted by ICASSP'26 (CCF-B)!</strong></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-20 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Education</h2>
+            <div class="space-y-8">
+                <!-- ISCAS -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-24 h-24 shrink-0 hidden md:flex items-center justify-center bg-gray-50 rounded-lg p-2">
+                        <img src="https://www.iscas.ac.cn/images/iscaslogo.png" alt="NWPU Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            
+                            <!-- 左侧：上下排列 -->
+                            <div class="flex flex-col">
+                                <p class="text-xl font-bold text-gray-900">
+                                    Institute of Software, Chinese Academy of Sciences
+                                </p>
+                                <span class="text-xl font-bold text-gray-900">
+                                    University of Chinese Academy of Sciences
+                                </span>
+                            </div>
+
+                            <!-- 右侧：时间 -->
+                            <span class="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                                Sep 2024 - Present
+                            </span>
+                        </div>
+                            <p class="text-lg font-medium text-gray-800">Master Student of Computer Science and Technology, the National Key Laboratory of Space Integrated Information System</p>
+                            <p class="text-gray-500 text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Beijing, China</p>
+                        
+                    </div>
+                </div>
+
+                <!-- NWPU -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-24 h-24 shrink-0 hidden md:flex items-center justify-center bg-gray-50 rounded-lg p-2">
+                        <img src="https://news.nwpu.edu.cn/_mediafile/view/2013/03/28/25p1ckfib9.gif" alt="NWPU Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">The Northwestern Polytechnical University</h3>
+                            <span class="text-sm font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Sep 2020 - Jul 2024</span>
+                        </div>
+                        <p class="text-lg font-medium text-gray-800">Bachelor of Computer Science, Honor College</p>
+                        <ul class="list-disc list-inside text-gray-600 mt-2 text-sm">
+                            <li>Rank: 2/112 (3rd year)</li>
+                        </ul>
+                        <p class="text-gray-500 text-sm mt-1"><i class="fas fa-map-marker-alt"></i> Xi'an, Shaanxi, China</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Selected Projects <span class="text-sm font-normal text-gray-500 ml-2">(* denotes equal contribution)</span></h2>
+            <p class="text-sm text-gray-500 mb-6 -mt-4">Citation counts are given by <a href="https://www.semanticscholar.org/" target="_blank" class="text-blue-500 hover:underline">Semantic Scholar</a>.</p>
+            
+            <div class="space-y-6">
+                
+                <!-- 1st, CVPR PBVS'26 HISR -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        <a href="https://github.com/NikonD850/PBVS_HISR26" target="_blank" class="hover:underline">
+                        Winner on both PSNR and SAM, 
+                        </a>
+                        PBVS 2026 Challenge on Hyperspectral Image Super-Resolution
+                    </h3>
+
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
+                        <span class="author-highlight">Dawei Fan</span>, Zeyu Li, Zhenzhen Qin, Peihong Xin, et al.
+                    </p>
+
+                    <div class="flex gap-2 mt-3 flex-wrap">
+                        <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded">
+                            CVPR 2026 Workshop
+                        </span>
+
+                        <span class="text-xs font-semibold px-2 py-1 bg-purple-50 text-purple-700 border border-purple-100 rounded">
+                            Rank #1
+                        </span>
+
+                        <!-- <span class="citation-count text-xs font-semibold px-2 py-1 bg-green-50 text-green-700 rounded hidden items-center"
+                            data-paper-id="f340dad0d38834d4a2ffac0ad63ab2ced07bf73a"
+                            data-title="NTIRE-2025-Challenge-on-Event-Based-Image-Methods-Sun-Alfarano">
+                        </span> -->
+                    </div>
+                </div>
+
+                <!-- 1st, CVPR PBVS'26 HISR -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        <a href="https://github.com/NikonD850/PBVS_TISR26" target="_blank" class="hover:underline">
+                        Winner on SSIM, 
+                        </a>
+                        PBVS 2026 Challenge on Thermal Image Super-Resolution
+                    </h3>
+
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
+                        <span class="author-highlight">Dawei Fan</span>, Zeyu Li, et al.
+                    </p>
+
+                    <div class="flex gap-2 mt-3 flex-wrap">
+                        <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded">
+                            CVPR 2026 Workshop
+                        </span>
+
+                        <span class="text-xs font-semibold px-2 py-1 bg-purple-50 text-purple-700 border border-purple-100 rounded">
+                            Rank #1
+                        </span>
+
+                        <!-- <span class="citation-count text-xs font-semibold px-2 py-1 bg-green-50 text-green-700 rounded hidden items-center"
+                            data-paper-id="f340dad0d38834d4a2ffac0ad63ab2ced07bf73a"
+                            data-title="NTIRE-2025-Challenge-on-Event-Based-Image-Methods-Sun-Alfarano">
+                        </span> -->
+                    </div>
+                </div>
+
+                <!-- ICASSP'26 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        <a href="https://github.com/NikonD850/TRM-UNet" target="_blank" class="hover:underline">
+                            TRM-UNet: An Efficient Event-Guided Motion Deblurring Network</h3>
+                        </a>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
+                        <span class="author-highlight">Dawei Fan</span>, Xiongxin Tang, Qiao Chen, Fanjiang Xu.
+                    </p>
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
+                        Achieved PSNR of 37.21 on GoPro dataset with merely 9.18M parameter and 64.07 GFLOPs.
+                    </p>
+                    <div class="flex gap-2 mt-3 flex-wrap">
+                        <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded">ICASSP 2026 (CCF-B)</span>
+                        <!-- Precise Search with Paper ID -->
+                        <!-- <span class="citation-count text-xs font-semibold px-2 py-1 bg-green-50 text-green-700 rounded hidden items-center" data-paper-id="3154ea582851e6eac44eee8bb863d68ef0410d14" data-title="CodePlot-CoT"></span> -->
+                    </div>
+                </div>
+
+                <!-- 4th, CVPR NTIRE'25 Event-deblur -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">
+                        4th Place, 
+                        <a href="https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/papers/Sun_NTIRE_2025_Challenge_on_Event-Based_Image_Deblurring_Methods_and_Results_CVPRW_2025_paper.pdf" target="_blank" class="hover:underline">
+                        NTIRE 2025 Challenge on Event-Based Image Deblurring
+                        </a>
+                    </h3>
+
+                    <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
+                        <span class="author-highlight">Dawei Fan</span>, Dafeng Zhang, Yong Yang (Done during internship at SRC-B, Team Give_it_a_try)
+                    </p>
+
+                    <div class="flex gap-2 mt-3 flex-wrap">
+                        <span class="text-xs font-semibold px-2 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded">
+                            CVPR 2025 Workshop
+                        </span>
+
+                        <span class="text-xs font-semibold px-2 py-1 bg-purple-50 text-purple-700 border border-purple-100 rounded">
+                            Rank #4
+                        </span>
+
+                        <span class="citation-count text-xs font-semibold px-2 py-1 bg-green-50 text-green-700 rounded hidden items-center"
+                            data-paper-id="f340dad0d38834d4a2ffac0ad63ab2ced07bf73a"
+                            data-title="NTIRE-2025-Challenge-on-Event-Based-Image-Methods-Sun-Alfarano">
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Internship Experience Section -->
+        <section id="internships" class="mb-20 scroll-mt-24">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Internship Experiences</h2>
+            <div class="space-y-8">
+                
+
+                <!-- SenseTime -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-24 h-24 shrink-0 hidden md:flex items-center justify-center bg-gray-50 rounded-lg p-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/SenseTime_Logo-Alternate.jpg" alt="SenseTime Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">SenseTime (商汤科技)</h3>
+                            <span class="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Sep 2025 - Present</span>
+                            
+                        </div>
+                        <p class="text-lg font-medium text-gray-800">Research Intern</p>
+                    </div>
+                </div>
+
+                <!-- Samsung -->
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-24 h-24 shrink-0 hidden md:flex items-center justify-center bg-gray-50 rounded-lg p-2">
+                        <img src="https://cdn.codeground.org/nsr/images/layout/logo-sr.png" alt="Samsung Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Samsung SRC-B (三星电子中国研究院)</h3>
+                            <span class="text-sm font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Jan 2025 - Jun 2025</span>
+                        </div>
+                        <p class="text-lg font-medium text-gray-800">Research Intern</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two Columns: XCPC NOIP -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+            <!-- Honors -->
+            <section id="XCPC-NOIP">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">XCPC/NOIP Awards</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-medal text-gray-400 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://board.xcpcio.com/icpc/48th/xian-invitational?group=official" target="_blank" class="hover:underline">
+                                    Silver Medal of 48th ICPC Invitational (Xi'an)
+                                </a>
+                            </p>
+                            <p class="font-bold text-gray-600">
+                                就在今天 (74/354)
+                            </p>
+                            <p class="text-sm text-gray-500">Xi'an, May 2023</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#CD7F32;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://xcpcio.com/board/icpc/47th/shenyang?group=official" target="_blank" class="hover:underline">
+                                    Bronze Medal of 47th ICPC Regional (Shenyang)
+                                </a>
+                            </p>
+                            <p class="font-bold text-gray-600">
+                                就在今天 (110/709)
+                            </p>
+                            <p class="text-sm text-gray-500">Shenyang, Nov 2022</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#CD7F32;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://xcpcio.com/board/ccpc/8th/guilin?group=official" target="_blank" class="hover:underline">
+                                    Bronze Medal of 8th CCPC Guilin site
+                                </a>
+                            </p>
+                            <p class="font-bold text-gray-600">
+                                就在今天 (124/240)
+                            </p>
+                            <p class="text-sm text-gray-500">Guilin, Oct 2022</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://xcpcio.com/board/provincial-contest/2022/shanxi?group=official" target="_blank" class="hover:underline">
+                                    Gold Medal of 10th ICPC Shaanxi Provincial
+                                </a>
+                            </p>
+                            <p class="font-bold text-gray-600">
+                                就在今天 (9/89)
+                            </p>
+                            <p class="text-sm text-gray-500">Xi'an, Oct 2022</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://www.bilibili.com/video/BV19Y4y1x79S/?share_source=copy_web&vd_source=ab66a0f9e71aa47b08e5f89967b3cb11"  target="_blank" class="hover:underline">
+                                Gold Medal of 9th ICPC Shaanxi Provincial
+                                </a>
+                            </p>
+                            <p class="font-bold text-gray-600">
+                                gsd官方唯一指定粉丝团 (9/101)
+                            </p>
+                            <p class="text-sm text-gray-500">Xi'an, May 2022</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal text-gray-400 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://www.ccf.org.cn/ccf/preview/zgjsjxh/noi/noi2018/t2.htm" target="_blank" class="hover:underline">
+                                2nd Prize in National Olympiad in Informatics in Provinces (NOIP)
+                                </a>
+                            </p>
+                            <p class="text-sm text-gray-500">Beijing, Nov 2018</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="Other Honors">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Other Honors and Awards</h2>
+                <ul class="space-y-4">
+                    
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">First-Class Scholarship (NWPU)</p>
+                            <p class="text-sm text-gray-500">Xi'an, 2023 (￥5000)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">Best Leadership Award (Honor College, NWPU)</p>
+                            <p class="text-sm text-gray-500">Xi'an, 2023 (￥8000)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">Innovation Star (Honor College, NWPU)</p>
+                            <p class="text-sm text-gray-500">Xi'an, 2022 & 2023 (￥8000)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">Star of Arts and Sports (Honor College, NWPU)</p>
+                            <p class="text-sm text-gray-500">Xi'an, 2022 (￥8000)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">Huawei Intelligent Base Scholarship</p>
+                            <p class="text-sm text-gray-500">Xi'an, 2022 (￥4000)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal text-gray-400 mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">Second-Class Scholarship (NWPU)</p>
+                            <p class="text-sm text-gray-500">Xi'an, 2021 (￥1000) & 2022 (￥2000)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-medal mt-1 mr-3" style="color:#FFD700;"></i>
+                        <div>
+                            <p class="font-bold text-gray-800">
+                                <a href="https://pkuschool.github.io/Honours-programs" target="_blank" class="hover:underline">
+                                    Honor Diploma of the Affiliated High School of Peking University</a>
+                            </p>
+                            <p class="text-sm text-gray-500">Beijing, Interview@2019, Award@2020</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!-- Skills -->
+            <section id="skills">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Skills & Proficiencies</h2>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="mb-4">
+                        <h3 class="font-bold text-gray-800 mb-2">Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">Python</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">C++</span>
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium border border-blue-100">C</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-gray-800 mb-2">Frameworks</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-lg text-sm font-medium border border-red-100">PyTorch</span>
+                            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-lg text-sm font-medium border border-green-100">BasicSR</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800 mb-2">Tools & Databases</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium border border-gray-200">Git</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium border border-gray-200">Tensorboard</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8">
+        <div class="max-w-5xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; <span id="year"></span> Dawei Fan. All rights reserved.</p>
+            <p class="mt-2">Modified from <a href="https://github.com/gogoduan/chengqiduan.github.io" target="_blank" class="hover:underline">chengqiduan.github.io</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Email copy function
+        function copyEmail(btn) {
+            const email = "duancq24@connect.hku.hk";
+            const el = document.createElement('textarea');
+            el.value = email;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            
+            const span = btn.querySelector('.email-text');
+            const originalText = span.innerText;
+            span.innerText = "Copied!";
+            setTimeout(() => { span.innerText = originalText; }, 2000);
+        }   
+   
+        // Fetch Semantic Scholar Citations with Queue and Retry Logic
+        async function fetchCitations() {
+            const citationElements = Array.from(document.querySelectorAll('.citation-count'));
+            
+            // 1. 初始化所有标签：去除隐藏，显示带有 Loading 动画的占位符 "-"
+            citationElements.forEach(el => {
+                el.innerHTML = `<i class="fas fa-spinner fa-spin mr-1"></i> Citations: -`;
+                el.classList.remove('hidden');
+                el.classList.add('inline-flex');
+            });
+
+            // 2. 建立排队与重试机制 (最多尝试15次，防止死循环)
+            const retryCounts = new Map();
+            let queue = [...citationElements];
+
+            while (queue.length > 0) {
+                const el = queue.shift(); // 取出队列里的第一个
+                const paperId = el.getAttribute('data-paper-id');
+                const title = el.getAttribute('data-title');
+                let success = false;
+                
+                const currentRetries = retryCounts.get(el) || 0;
+
+                try {
+                    let count = undefined;
+                    let response = null;
+                    
+                    if (paperId) {
+                        const url = `https://api.semanticscholar.org/graph/v1/paper/${paperId}?fields=citationCount`;
+                        response = await fetch(url);
+                    } else if (title) {
+                        const cleanTitle = encodeURIComponent(title.replace(/[^a-zA-Z0-9 -]/g, "").trim());
+                        const url = `https://api.semanticscholar.org/graph/v1/paper/search?query=${cleanTitle}&limit=1&fields=citationCount`;
+                        response = await fetch(url);
+                    }
+                    
+                    if (response && response.ok) {
+                        const data = await response.json();
+                        if (paperId && data && data.citationCount !== undefined) {
+                            count = data.citationCount;
+                        } else if (!paperId && data.data && data.data.length > 0) {
+                            count = data.data[0].citationCount;
+                        }
+                        
+                        if (count !== undefined) {
+                            // 成功获取：替换成真实的数字
+                            el.innerHTML = `<i class="fas fa-quote-right mr-1"></i> Citations: ${count}`;
+                            success = true;
+                        } else {
+                            // 接口通了但没查到引用数据：显示0
+                            el.innerHTML = `<i class="fas fa-quote-right mr-1"></i> Citations: 0`;
+                            success = true;
+                        }
+                    }
+                } catch (error) {
+                    // 静默捕获错误，不让控制台报错刷屏
+                }
+                
+                if (!success) {
+                    // 如果失败（通常是因为并发被限流），把它重新塞回队列末尾！
+                    if (currentRetries < 15) { 
+                        retryCounts.set(el, currentRetries + 1);
+                        queue.push(el); 
+                        // 被限流了，强行等待 2 秒让服务器喘口气
+                        await new Promise(r => setTimeout(r, 2000));
+                    } else {
+                        // 重试了15次还是不行，显示 N/A
+                        el.innerHTML = `<i class="fas fa-exclamation-circle mr-1"></i> N/A`;
+                    }
+                } else {
+                    // 获取成功！必须等待至少 1.2 秒再拉取下一个（严格遵守接口 1次/秒 的限制）
+                    await new Promise(r => setTimeout(r, 1200));
+                }
+            }
+        }
+        
+        // Run the fetch function after the page loads
+        document.addEventListener('DOMContentLoaded', fetchCitations);
+    </script>
+</body>
+</html>
